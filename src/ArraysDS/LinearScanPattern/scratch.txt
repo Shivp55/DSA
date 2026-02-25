@@ -1,0 +1,40 @@
+Linear Scan Pattern
+
+What does the pattern mean
+You go through the array once(left to right or right to left) and keep a few variables that represent the best answer so far.
+
+Typical things to track:
+=> Max/min
+=> Count
+=> Sum
+=> Best Profit
+=> Best Difference
+=> Last Seen Index - Sometimes with a variable, sometimes with a Hashmap
+
+How can we Identify this pattern:
+- Maximum / minimum
+- Count how many
+- Best Profit
+- find first/last
+- Single pass or in on traversal
+- return a number not a subarray list
+- no need to reorder / no need for sub arrays
+
+Strong signal :
+If the answer can be updated using only:
+-> The current element
+->  and a few variables
+Then it's linear scan
+
+ When multiple Patterns are possible:
+ Sometimes you could use sorting or Hashmap, but linear scan is better when:
+ - > You want O(1) extra space
+ -> You don't need frequency tables
+ -> You don't need to remember how many past states
+ -> Sorting would increase the time to O(n log n) bcoz you must preserve order.
+
+
+
+
+
+

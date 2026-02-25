@@ -1,0 +1,17 @@
+How to calculate the complexity (Rules + shortcut)
+
+Time Complexity shortcuts:
+=> 1 loop over n -> O(n)
+=> 2 Nested loops over n -> O(n^2)
+=> Sorting -> O(n log n)
+=> Binary Search -> O(log n)
+=> Loop + Binary Search inside -> O(n log n)
+=> Hash Maps Operations average O(1) each -> often leads to O(n)
+
+Space Complexity Shortcuts:
+If you create any array/maps of size n -> O(n)
+If you only store constants (few ints) -> O(1)
+Recursion Depth -> Call Stack space (Often O(n) or O(log n)
+
+=> Space complexity usually counts for extra space, not the input array
+
