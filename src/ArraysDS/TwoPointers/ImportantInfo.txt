@@ -1,0 +1,54 @@
+2 Pointers pattern
+
+Two pointers means:
+You use 2 indices instead of one
+and move them in a controlled way to solve the problem efficiently
+
+Instead of:
+=> Nested Loops -> O(n^2)
+
+You use:
+=> Two pointers -> O(n)
+
+When should you use the 2 pointers?
+- Sorted array is given
+- Find pair with given sum
+- Remove duplicates
+- Reverse an array
+- Partition an array
+- Palindrome Checking
+- Move zeros / rearrange elements
+- Compare elements from both the ends
+
+If you see :
+"Find two elements"
+"Pair whose sum equals"
+"Remove duplicates in a sorted array"
+=> In all these cases, use two pointers
+
+Types of Two pointer Patterns
+Opposite direction(Start and end)
+Same direction (Slow and fast)
+
+Basic Syntax: (Pair sum)
+int l = 0, r= n-1;
+while(l<r){
+    long s= (long) a[l]+a[r-1];
+    if(s== target) break;
+    if(s<target) l++;
+    else r--;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
