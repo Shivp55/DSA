@@ -1,0 +1,34 @@
+Kadane's Algorithm  (Maximum Sub araay )
+=> This pattern is for questions like:
+- Find the maximum sum of a contiguous subarray
+- Best time to take a continuous segment
+- Largest profit/score over a run
+- Return the max sub array sum(Sometimes also return indices)
+
+Core Idea:
+At every index, you decide,
+=> Do I extend the previous subarray?
+=> Or start a new sub array from here?
+
+So we keep two things:
+-> currSum = max( arr[i], currSum + arr[i] )
+-> bestSum = max(bestSum, currSum)
+
+How to identify this pattern in a Question:
+"contiguous subarray"
+"maximum sum"
+"largest streak"
+"best streak"
+"continuous"
+And the array has negatves+ptves, Kadane is the almost always the intended approach
+
+Basic Syntax:
+long curr =0, best = Long.MIN_VALUE;
+for(int x:a){
+    curr=Math.max(x, curr+x);
+    best=Math.max(best, curr);
+}
+
+
+
+
